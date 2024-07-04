@@ -90,3 +90,27 @@ h1 {
     cursor: pointer;
 }
 
+@media(max-width: 500px) {
+    h1 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .TodoForm {
+                    width: 300px;
+                    margin-bottom: 1rem;
+                }
+        .todo-input {
+            width: 200px;
+        }
+        .Todo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #8758ff;
+            color: #fff;
+            padding: 0.5rem 0.5rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+}
