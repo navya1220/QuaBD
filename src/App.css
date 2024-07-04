@@ -90,7 +90,7 @@ h1 {
     cursor: pointer;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 800px) {
     h1 {
             color: #fff;
             margin-bottom: 0.5rem;

@@ -60,7 +60,7 @@
   width: 100%;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 800px) {
   .custom-form {
       width: 300px;
       height: auto;
