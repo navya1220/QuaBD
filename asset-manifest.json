@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/QuaBD/static/css/main.eb3105cc.css",
+    "main.css": "/QuaBD/static/css/main.e15cd6e4.css",
     "main.js": "/QuaBD/static/js/main.e0bbbf8b.js",
     "index.html": "/QuaBD/index.html",
-    "main.eb3105cc.css.map": "/QuaBD/static/css/main.eb3105cc.css.map",
+    "main.e15cd6e4.css.map": "/QuaBD/static/css/main.e15cd6e4.css.map",
     "main.e0bbbf8b.js.map": "/QuaBD/static/js/main.e0bbbf8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb3105cc.css",
+    "static/css/main.e15cd6e4.css",
     "static/js/main.e0bbbf8b.js"
   ]
 }
