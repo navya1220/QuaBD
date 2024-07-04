@@ -11,7 +11,7 @@ body {
     background: #7FFFD4;
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
 .App {
@@ -22,6 +22,12 @@ h1 {
     color: #fff;
     margin-bottom: 0.5rem;
     font-size: 1.75rem;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #ff6347;
+
 }
 
 .TodoWrapper {
@@ -29,6 +35,7 @@ h1 {
     margin-top: 5rem;
     padding: 2rem;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .TodoForm {
@@ -39,24 +46,35 @@ h1 {
 .todo-input {
     outline: none;
     background: none;
-    border: 1px solid #8758ff;
+    border: 1px solid #ffa500;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
     width: 300px;
     color: #fff;
+    transition: border-color 0.3s ease;
 }
 
 .todo-input::placeholder {
     color: #ffffff4d;
 }
 
+.todo-input:hover,
+.todo-input:focus {
+    border-color: #ff6347;
+}
+
 .todo-btn {
-    background: #8758ff;
+    background: #ffa500;
     color: #fff;
     border: none;
     padding: 0.55rem;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+    background: #ff4500;
 }
 
 .Todo {
@@ -68,6 +86,28 @@ h1 {
     padding: 0.75rem 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: background 0.3s ease;
+}
+
+.Todo:hover {
+    background: #ff6347;
+}
+
+.task-button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: color 0.3s ease;
+}
+
+.task-button:hover {
+    color: #ffa500;
+}
+
+.circle {
+    color: white;
 }
 
 .fa-trash {
@@ -77,6 +117,11 @@ h1 {
 .incompleted {
     color: #fff;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.incompleted:hover {
+    color: #ffa500;
 }
 
 .completed {
@@ -88,51 +133,69 @@ h1 {
 .edit-icon,
 .delete-icon {
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+    color: #ff6347;
 }
 
 @media(max-width: 500px) {
     h1 {
-            color: #fff;
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-        }
-        .TodoForm {
-                    width: 200px;
-                    margin-bottom: 1rem;
-                }
-        .todo-input {
-            width: 140px;
-            padding: 0.5rem 1rem;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-        }
-        .Todo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #8758ff;
-            padding: 0.25rem 0.5rem;
-                border-radius: 2px;
-                margin-bottom: 0.5rem;
-            color: #fff;
-            width: 200px;   
-            height: 30px;
-     }
-        .Todo p {
-            font-size: 10px;
-        }
-        .edit-icon {
-            height: 12px;
-        }
-        .delete-icon {
-            height: 12px;
-        }
-        .todo-input {
-            font-size: 8px;
-        }
-        .todo-btn {
-            width: 60px;
-            font-size: 8px;
-            height: 30px;
-        }
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .TodoForm {
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .todo-input {
+        width: 140px;
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .Todo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #8758ff;
+        padding: 0.25rem 0.5rem;
+        border-radius: 2px;
+        margin-bottom: 0.5rem;
+        color: #fff;
+        width: 200px;
+        height: 30px;
+    }
+
+    .Todo p {
+        font-size: 10px;
+    }
+
+    .edit-icon {
+        height: 12px;
+    }
+
+    .delete-icon {
+        height: 12px;
+    }
+
+    .todo-input {
+        font-size: 8px;
+    }
+
+    .todo-btn {
+        width: 60px;
+        font-size: 8px;
+        height: 30px;
+    }
+
+    .task-button {
+        font-size: 12px;
+    }
 }
